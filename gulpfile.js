@@ -1,4 +1,4 @@
-const {src, dest, series, watch} = require('gulp');
+const {src, dest, series, watch, task} = require('gulp');
 const sassGulp = require('gulp-sass');
 const sassSass = require('sass');
 const csso = require('gulp-csso');
@@ -8,6 +8,8 @@ const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const sync = require('browser-sync').create();
+
+const ghPages = require('gulp-gh-pages');
 
 const sass = sassGulp(sassSass);
 
@@ -61,5 +63,7 @@ function serve() {
 
 exports.build = series(clear, copyImages, scripts, scss, html);
 exports.serve = series(clear, copyImages, scripts, scss, html, serve);
+
+task('deploy', () => src('./dist/**/*').pipe(ghPages()));
 
 exports.clear = clear;

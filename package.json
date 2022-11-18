@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://tyradire.github.io/new-products-lp",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4"
   },
   "dependencies": {
     "browser-sync": "^2.27.10",
