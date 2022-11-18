@@ -20,11 +20,12 @@
 .review {
   position: relative;
   width: 360px;
+  height: 460px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F7F7F7;
-  padding: 68px 30px 30px;
+  padding: 68px 30px 22px;
   box-sizing: border-box;
 
   img {
@@ -41,5 +42,36 @@
     line-height: 1.55;
     font-weight: 300;
     color: #000000;
+    -webkit-line-clamp: 12; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden;
   }
+}
+
+.review__more-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 300;
+  color: rgb(133, 52, 52);
+  &:hover {
+    cursor: pointer;
+    color: #000000;
+  }
+}
+
+.review_open {
+  height: 900px;
+}
+
+.review__text_open {
+  -webkit-line-clamp: 20;
+  overflow: visible;
 }
