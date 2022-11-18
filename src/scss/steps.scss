@@ -1,0 +1,31 @@
+.steps {
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__enumeration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.23;
+    font-weight: 600;
+    margin-bottom: 100px;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+}
