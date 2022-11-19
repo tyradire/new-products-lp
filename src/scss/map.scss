@@ -33,3 +33,34 @@
     }
   } 
 }
+
+@media (max-width: 1250px) {
+  .map {
+    &__wrapper {
+      padding: 32px;
+      width: 248px;
+      top: 140px;
+      left: 120px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    &__adress {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+    &__icons {
+      margin-top: 20px;
+    }
+    &__icon {
+      width: 24px;
+      height: 24px;
+      &:first-child {
+        margin-right: 8px;
+      }
+    } 
+  }
+}

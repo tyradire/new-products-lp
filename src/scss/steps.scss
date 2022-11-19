@@ -29,3 +29,18 @@
     font-weight: 300;
   }
 }
+
+@media (max-width: 1250px) {
+  .steps {
+    max-width: 960px;
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 80px;
+    }
+    &__image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

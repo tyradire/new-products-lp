@@ -40,3 +40,10 @@
 :root {
   --swiper-theme-color: #222222 !important;
 }
+
+@media (max-width: 1250px) {
+  .swiper-slide img {
+    width: 600px;
+    height: 400px;
+  }
+}

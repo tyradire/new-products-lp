@@ -75,3 +75,33 @@
   -webkit-line-clamp: 20;
   overflow: visible;
 }
+
+@media (max-width: 1250px) {
+  .reviews {
+    max-width: 960px;
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 100px;
+    }
+  }
+  .review {
+    position: relative;
+    width: 280px;
+    height: 350px;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .review__text {
+    width: 240px;
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 300;
+  }
+  .review_open {
+    height: 840px;
+  }
+}
