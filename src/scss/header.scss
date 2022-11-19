@@ -1,15 +1,33 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 10px 40px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
+  background-color: #ffffff;
+
+  &__link {
+    color: var(--brand-accent-bg);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .header__logo {
   width: 160px;
   height: 78px;
+}
+
+.header__soc-logo {
+  width: 24px;
+  height: 24px;
 }
 
 .header__contact {
@@ -20,8 +38,16 @@
 
 .header__phone-part {
   display: flex;
-  img {
-    margin-right: 5px;
+  color: var(--brand-accent-bg);
+  text-decoration: none;
+  svg {
+    margin: 7px 2px 0 0;
+  }
+  &:hover {
+    color: var(--brand-accent);
+  }
+  &:hover path {
+    fill: var(--brand-accent);
   }
 }
 
