@@ -1,3 +1,81 @@
+
+
+.feedback {
+  position: relative;
+  text-align: center;
+
+  &__title {
+    margin: 40px 0 0 0;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--brand-main);
+    text-transform: uppercase;
+  }
+  &__note {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: #444444;
+  }
+  &__input, &__text, &__submit-btn {
+    width: 268px;
+    margin: 15px auto 0;
+    padding: 8px 5px;
+    outline: none;
+  }
+  &__text {
+    width: 270px;
+    height: 100px;
+    resize: none;
+  }
+  &__submit-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #444444;
+    width: 282px;
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+  &__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    width: 32px;
+    height: 32px;
+    &:hover {
+      background-color: #ff6464;
+      color: #ffffff;
+    }
+  }
+}
+
+.feedback__form {
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 200px);
+  display: none;
+  flex-direction: column;
+  width: 400px;
+  height: 460px;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1px solid #444444;
+}
+
+.feedback_opened {
+  display: flex;
+}
+
 .feedback__button {
   width: 245px;
   margin: 90px auto;

@@ -1,1 +1,13 @@
-<button class="feedback__button"><span>Узнать больше!</span></button>
+<div class="feedback">
+  <form class="feedback__form" method="POST" id="feedback-form">
+    <h3 class="feedback__title">Заполните заявку</h3>
+    <p class="feedback__note">Мы свяжемся с Вами в течение 24-х часов</p>
+    <input class="feedback__input" type="text" placeholder="Ваше имя" id="name" name="namecl" required="true" />
+    <input class="feedback__input" type="text" placeholder="Ваш email" id="email" name="emailcl" required="true" />
+    <input class="feedback__input" type="text" placeholder="Ваш телефон" id="phone" name="phonecl" />
+    <textarea class="feedback__text" placeholder="..." maxlength="300" id="text" name="textcl"></textarea>
+    <input class="feedback__submit-btn" type="submit" id="form-submit"/>
+    <button class="feedback__close-btn">x</button>
+  </form>
+  <button class="feedback__button"><span>Узнать больше!</span></button>
+</div>
