@@ -44,3 +44,48 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .steps {
+    max-width: 720px;
+    
+    &__enumeration {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 80px;
+    }
+    &__image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .steps {
+    max-width: 340px;
+
+    &__description {
+      margin-bottom: 30px;
+    }
+    &__enumeration {
+      flex-direction: column;
+      svg {
+        transform: rotate(90deg);
+        margin-bottom: 30px;
+      }
+    }
+    &__title {
+      font-size: 28px;
+    }
+    &__image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

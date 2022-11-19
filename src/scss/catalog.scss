@@ -28,3 +28,16 @@
   font-weight: 300;
   color: #777777;
 }
+
+@media (max-width: 1250px) {
+  .catalog {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 960px) {
+  .catalog {
+    max-width: 720px;
+    padding: 20px;
+  }
+}

@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 102px);
+  height: 100vh;
   background-image: url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -33,4 +33,27 @@
   font-size: 18px;
   line-height: 1.55;
   text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .hero__offer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 500px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 565px) {
+  .hero {
+    background-position: center center;
+    &__offer {
+      font-size: 14px;
+    }
+  }
 }

@@ -113,3 +113,11 @@
     width: 100%;
   }
 }
+
+@media (max-width: 565px) {
+  .feedback__form {
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+  }
+}
