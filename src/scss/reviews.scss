@@ -138,6 +138,7 @@
       flex-direction: column;
     }
     &__title {
+      font-size: 32px;
       margin-bottom: 120px;
     }
   }
@@ -160,6 +161,9 @@
   .reviews {
     margin-top: 80px;
     margin-bottom: 60px;
+    &__title {
+      font-size: 28px;
+    }
   }
   .review {
     width: 320px;

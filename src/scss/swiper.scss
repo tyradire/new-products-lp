@@ -60,4 +60,8 @@
     width: 100%;
     height: auto;
   }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    --swiper-navigation-size: 20px;
+  }
 }

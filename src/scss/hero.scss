@@ -53,7 +53,10 @@
   .hero {
     background-position: center center;
     &__offer {
-      font-size: 14px;
+      margin-left: 20px;
+      text-align: start;
+      line-height: 1.55;
+      width: auto;
     }
   }
 }
